@@ -2,13 +2,12 @@ import javax.swing.*;
 
 public class Main {
     public static void main(String[] args) {
-        JFrame ventana = new JFrame("Juego de Proyectiles");
-        GamePanel panel = new GamePanel();
-
-        ventana.add(panel);
-        ventana.pack();
-        ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        ventana.setLocationRelativeTo(null);
-        ventana.setVisible(true);
+        JFrame frame = new JFrame("Shooter Invasion");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setResizable(false);
+        frame.add(new GamePanel());
+        frame.pack();
+        frame.setLocationRelativeTo(null);
+        frame.setVisible(true);
     }
 }
